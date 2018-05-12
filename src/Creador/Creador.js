@@ -67,6 +67,26 @@ class Creador extends Component {
                  <option value="Courier New">Courier New</option>
                 </select>
               </td>
+              <td>
+                <div className="texto">Tamaño de fuente:</div>
+              </td>
+              <td>
+                <select className="campoForm" onChange={event => this.manejador('fuente', event.target.value)}>
+                 <option value="Georgia">10</option>
+                 <option value="Arial">14</option>
+                 <option value="Courier New">18</option>
+                </select>
+              </td>
+              <td>
+                <div className="texto">Color de fuente:</div>
+              </td>
+              <td>
+                <select className="campoForm" onChange={event => this.manejador('fuente', event.target.value)}>
+                 <option value="Georgia">Rojo</option>
+                 <option value="Arial">Azul</option>
+                 <option value="Courier New">Negro</option>
+                </select>
+              </td>
             </tr>
           </tbody>
         </table>
